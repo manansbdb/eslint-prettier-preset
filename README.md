@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="docs/banner.svg" alt="ESLint + Prettier Preset banner" width="100%" />
+  <img src="docs/banner.svg" alt="eslint-prettier-preset banner" width="100%" />
 </p>
 
 <h1 align="center">eslint-prettier-preset</h1>
 
 <p align="center">
-  <strong>EN</strong> Example ESLint flat config + Prettier<br/>
-  <strong>PT</strong> Exemplo de ESLint flat config + Prettier
+  <strong>EN</strong> Example ESLint and Prettier configs that work together.<br/>
+  <strong>PT</strong> Exemplos de configs ESLint e Prettier que funcionam em conjunto.
 </p>
 
 <p align="center">
   <a href="https://github.com/manansbdb/eslint-prettier-preset/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge" alt="MIT" /></a>
   <img src="https://img.shields.io/badge/lang-EN%20%7C%20PT-3b82f6?style=for-the-badge" alt="EN PT" />
-  <img src="https://img.shields.io/badge/topic-ESLint-4b32c3?style=for-the-badge" alt="ESLint" />
+  <img src="https://img.shields.io/badge/type-starter-a855f7?style=for-the-badge" alt="starter" />
   <a href="#support--apoio"><img src="https://img.shields.io/badge/donate-BTC-f59e0b?style=for-the-badge" alt="Donate BTC" /></a>
 </p>
 
@@ -22,88 +22,47 @@
 
 | English | Português |
 |---------|-----------|
-| Example **ESLint flat config** (`eslint.config.mjs`) and Prettier settings for JS/TS projects. | Exemplo de **ESLint flat config** (`eslint.config.mjs`) e Prettier para projetos JS/TS. |
-| Copy configs, `npm install`, lint & format. | Copia configs, `npm install`, faz lint e format. |
+| Example ESLint and Prettier configs that work together. | Exemplos de configs ESLint e Prettier que funcionam em conjunto. |
 
 ```mermaid
 flowchart LR
-  A["📝 Source"] --> B["🔍 ESLint"]
-  B --> C["✨ Prettier"]
-  C --> D["✅ Clean diff"]
-  style A fill:#2563eb,stroke:#1d4ed8,color:#fff
-  style B fill:#4b32c3,stroke:#312e81,color:#fff
-  style C fill:#f7b93e,stroke:#ca8a04,color:#111
-  style D fill:#22c55e,stroke:#15803d,color:#fff
+  A["📦 Clone"] --> B["⚙️ Configure"]
+  B --> C["🚀 Use in project"]
+  style A fill:#a855f7,stroke:#7e22ce,color:#fff
+  style B fill:#0ea5e9,stroke:#0369a1,color:#fff
+  style C fill:#22c55e,stroke:#15803d,color:#fff
 ```
 
 ---
 
 ## Install / Instalação
 
-### 1) Clone / Clona
+### 1) Clone
 
 ```bash
 git clone https://github.com/manansbdb/eslint-prettier-preset.git
 cd eslint-prettier-preset
 ```
 
-### 2) Copy configs into your project / Copia configs
+### Use / Usar
 
 ```bash
-cp eslint.config.mjs /path/to/your-project/
-cp .prettierrc.json /path/to/your-project/
-# merge package.json devDependencies or:
-cd /path/to/your-project
-npm install -D eslint @eslint/js eslint-config-prettier prettier
-```
-
-### 3) Run / Corre
-
-```bash
-npx eslint .
-npx prettier --write .
+# open the files in this repo and copy what you need into your project
+ls
 ```
 
 ### Requirements / Requisitos
 
-- Node.js 18+
-- `npm`
+- `git`
+- No paid services required / Sem serviços pagos
 
 ---
 
-## Quick start / Início rápido
+## Files / Ficheiros
 
-```bash
-git clone https://github.com/manansbdb/eslint-prettier-preset.git
-cd eslint-prettier-preset
-npm install
-npx eslint . && npx prettier --check .
-```
-
----
-
-## Contents / Conteúdos
-
-| Path | Purpose / Função |
-|------|------------------|
-| `eslint.config.mjs` | Flat ESLint config |
-| `.prettierrc.json` | Prettier options |
-| `package.json` | Dev dependencies |
-| `SUPPORT.md` | Donations / Doações |
-
----
-
-## Project layout / Estrutura
-
-```text
-eslint-prettier-preset/
-├── docs/banner.svg
-├── eslint.config.mjs
-├── .prettierrc.json
-├── package.json
-├── SUPPORT.md
-└── README.md
-```
+- `eslint.config.mjs`
+- `.prettierrc.json`
+- `package.json`
 
 ---
 
@@ -115,7 +74,7 @@ Bitcoin donations welcome / Doações em Bitcoin bem-vindas:
 bc1q0qfnlnxyum9u45stzxe0a7jnhtj4j0usfkqdjw
 ```
 
-See [SUPPORT.md](./SUPPORT.md).
+**Network / Rede:** BTC (Bech32).
 
 ---
 
